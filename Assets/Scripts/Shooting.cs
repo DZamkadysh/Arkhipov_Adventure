@@ -11,15 +11,24 @@ public class Shooting : MonoBehaviour
 
     private bool isPlayerNear;
 
+    private float timeBtwShots;
+
+    [SerializeField] private float startTimeBtwShots = 1.5f;
+
     private void Update()
     {
+        if ((timeBtwShots <= 0) && (Input.GetButtonDown("Jump")) && (isPlayerNear == true))
+        {
 
-         if (Input.GetButtonDown("Jump") && (isPlayerNear == true))
-         {
-             Shoot();
-             isPlayerNear = false;
-            
-         }
+            Shoot();
+            timeBtwShots = startTimeBtwShots;
+
+        }
+        else
+        {
+            timeBtwShots -= Time.deltaTime;
+        }
+
 
     }
 
@@ -28,6 +37,14 @@ public class Shooting : MonoBehaviour
         if (PlayerNear.tag == "Player")
         {
             isPlayerNear = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider PlayerNear)
+    {
+        if (PlayerNear.tag == "Player")
+        {
+            isPlayerNear = false;
         }
     }
 
