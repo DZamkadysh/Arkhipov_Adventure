@@ -15,6 +15,7 @@ public class CoinSpawn : MonoBehaviour
         int[] coinSpawn = new int[6];
 
         Spawn();
+
     }
 
 
@@ -23,6 +24,7 @@ public class CoinSpawn : MonoBehaviour
         for (int i = 0; i < coinSpawn.Length; i++)
 
             Instantiate(coin, coinSpawn[i].position, coinSpawn[i].rotation);
+
     }
 
 }

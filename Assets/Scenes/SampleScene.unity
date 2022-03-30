@@ -2520,7 +2520,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 519857152}
-  - component: {fileID: 519857153}
   m_Layer: 0
   m_Name: sPoint_3
   m_TagString: Untagged
@@ -2542,20 +2541,6 @@ Transform:
   m_Father: {fileID: 839806859}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519857153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519857151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d4c768fae9995e40833e0b65fdf10c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinSpawn: {fileID: 519857152}
-  coin: {fileID: 425210371456276404, guid: 5a43f05298922fe4b8b4340dbb5cd38d, type: 3}
 --- !u!1001 &534601612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4014,7 +3999,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 743428492}
-  - component: {fileID: 743428493}
   m_Layer: 0
   m_Name: sPoint_6
   m_TagString: Untagged
@@ -4036,20 +4020,6 @@ Transform:
   m_Father: {fileID: 839806859}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &743428493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743428491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d4c768fae9995e40833e0b65fdf10c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinSpawn: {fileID: 743428492}
-  coin: {fileID: 425210371456276404, guid: 5a43f05298922fe4b8b4340dbb5cd38d, type: 3}
 --- !u!1001 &745065321
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4741,6 +4711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839806859}
+  - component: {fileID: 839806860}
   m_Layer: 0
   m_Name: Coins
   m_TagString: Untagged
@@ -4769,6 +4740,26 @@ Transform:
   m_Father: {fileID: 669107497}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &839806860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839806858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4c768fae9995e40833e0b65fdf10c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinSpawn:
+  - {fileID: 1622186017}
+  - {fileID: 1189680557}
+  - {fileID: 519857152}
+  - {fileID: 1584963934}
+  - {fileID: 1085234385}
+  - {fileID: 743428492}
+  coin: {fileID: 425210371456276404, guid: 5a43f05298922fe4b8b4340dbb5cd38d, type: 3}
 --- !u!1001 &859115463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6535,7 +6526,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1085234385}
-  - component: {fileID: 1085234386}
   m_Layer: 0
   m_Name: sPoint_5
   m_TagString: Untagged
@@ -6550,27 +6540,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085234384}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 15, y: 0, z: 23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 839806859}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1085234386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085234384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d4c768fae9995e40833e0b65fdf10c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinSpawn: {fileID: 1085234385}
-  coin: {fileID: 425210371456276404, guid: 5a43f05298922fe4b8b4340dbb5cd38d, type: 3}
 --- !u!1 &1089576832
 GameObject:
   m_ObjectHideFlags: 0
@@ -7156,7 +7132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1189680557}
-  - component: {fileID: 1189680558}
   m_Layer: 0
   m_Name: sPoint_2
   m_TagString: Untagged
@@ -7178,20 +7153,6 @@ Transform:
   m_Father: {fileID: 839806859}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1189680558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189680556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d4c768fae9995e40833e0b65fdf10c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinSpawn: {fileID: 1189680557}
-  coin: {fileID: 425210371456276404, guid: 5a43f05298922fe4b8b4340dbb5cd38d, type: 3}
 --- !u!1001 &1190780373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9351,7 +9312,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1584963934}
-  - component: {fileID: 1584963935}
   m_Layer: 0
   m_Name: sPoint_4
   m_TagString: Untagged
@@ -9373,20 +9333,6 @@ Transform:
   m_Father: {fileID: 839806859}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1584963935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584963933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d4c768fae9995e40833e0b65fdf10c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinSpawn: {fileID: 1584963934}
-  coin: {fileID: 425210371456276404, guid: 5a43f05298922fe4b8b4340dbb5cd38d, type: 3}
 --- !u!1001 &1596281330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9677,7 +9623,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1622186017}
-  - component: {fileID: 1622186018}
   m_Layer: 0
   m_Name: sPoint_1
   m_TagString: Untagged
@@ -9699,20 +9644,6 @@ Transform:
   m_Father: {fileID: 839806859}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1622186018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622186016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d4c768fae9995e40833e0b65fdf10c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinSpawn: {fileID: 1622186017}
-  coin: {fileID: 425210371456276404, guid: 5a43f05298922fe4b8b4340dbb5cd38d, type: 3}
 --- !u!1001 &1652692354
 PrefabInstance:
   m_ObjectHideFlags: 0
