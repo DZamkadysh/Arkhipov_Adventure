@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ShotStop
   - Firebolt
+  - Coin
   layers:
   - Default
   - TransparentFX
